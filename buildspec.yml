@@ -1,9 +1,15 @@
 version: 0.2
 
 phases:
+  install:
+    commands:
+      - echo installation start
+      - git config --global credential.helper
+      - git config --global credential.UseHttpPath true
   pre_build:
     commands:
       - echo prebuild start
+      - git clone https://github.com/abby-1992/poc-test.git
       - echo pre build step done
   build:
     commands:
