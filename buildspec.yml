@@ -10,6 +10,7 @@ phases:
     commands:
       - echo prebuild start
       - git clone https://github.com/abby-1992/poc-test.git
+      - git clone https://github.com/Spak-Digital-GmbH/commonUtils.git
       - echo pre build step done
   build:
     commands:
