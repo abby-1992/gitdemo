@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo prebuild start
+      - echo pre build step done
+  build:
+    commands:
+      - echo build start
+      - echo build step done
+  post_build:
+    commands:
+      - echo post build start
+      - echo post build completed
